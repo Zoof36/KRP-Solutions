@@ -255,15 +255,8 @@ img {
   display: block;
 }
 
-.menu-toggle {
-  display: block;
-  background: none;
-  font-size: 2rem;
-  border: none;
-}
-
 .nav {
-  display: none;
+  display: flex;
   flex-direction: column;
 }
 
