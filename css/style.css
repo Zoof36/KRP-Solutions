@@ -265,10 +265,7 @@ img {
 }
 
 /* Desktop */
-@media (min-width: 768px) {
-  .menu-toggle {
-    display: none;
-  }
+@media (min-width: 768px)
 
   .nav {
     display: flex;
