@@ -1,87 +1,209 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Services | KRP Solutions</title>
-  <link rel="stylesheet" href="css/style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services — KRP Solutions</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<header>
-  <div class="nav">
-    <strong>KRP Solutions</strong>
-      
-    <div class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-      <a href="contact.html" class="btn">Start Your Setup</a>
-    </div>
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-krp">KRP</span><span class="logo-sol">Solutions</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html" class="active">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="nav-cta">Get in Touch</a></li>
+    </ul>
   </div>
-</header>
+</nav>
 
-<section class="section-light">
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-bg"></div>
   <div class="container">
-    <h1>Our Services</h1>
-    <div class="cards">
-      <div class="card">
-        <h3>Branding Essentials</h3>
-        <p>• Logo (3 Variations)</p>
-        <p>• Simple Brand Kit PDF</p>
-        <p>• Colour Palette</p>
-        <p>• 6 Social Media Templates</p>
-        <a class="btn" href="contact.html">Enquire</a>
-      </div>
-      <div class="card">
-        <h3>Business Systems Starter</h3>
-        <p>• Notion Dashboard</p>
-        <p>• CRM Sheet</p>
-        <p>• Finance Tracker</p>
-        <p>• Admin Templates</p>
-        <a class="btn" href="contact.html">Enquire</a>
-      </div>
-      <div class="card">
-        <h3>Business-in-a-Box</h3>
-        <p>• Full Branding</p>
-        <p>• Full Systems Setup</p>
-        <p>• Launch Strategy</p>
-        <p>• 30-Day Content Plan</p>
-        <p>• 15 Social Media Templates</p>
-        <p>• 1-Hour Handover Session</p>
-        <a class="btn" href="contact.html">Enquire</a>
-      </div>
+    <div class="page-hero-content reveal">
+      <div class="section-eyebrow">Services & Packages</div>
+      <h1>Everything your<br><em>brand needs</em></h1>
+      <p>Three focused packages — or a custom solution built around you.</p>
     </div>
   </div>
 </section>
-    
-<section class="section-light">
+
+<!-- PACKAGES -->
+<section class="section" id="branding">
   <div class="container">
-    <h2>How It Works?</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>1. Choose Service</h3>
-        <p>Select the package that fits your needs.</p>
+
+    <!-- Branding Essentials -->
+    <div class="pkg-full reveal" id="branding">
+      <div class="pkg-full-header">
+        <div class="pkg-full-num">01</div>
+        <div>
+          <div class="section-eyebrow">Package One</div>
+          <h2 class="pkg-full-title">Branding Essentials</h2>
+          <p class="pkg-full-desc">Everything you need to look professional and show up consistently — from day one.</p>
+        </div>
       </div>
-      <div class="card">
-        <h3>2. Book Session</h3>
-        <p>Fill out simple booking form.</p>
-      </div>
-      <div class="card">
-        <h3>3. We Build</h3>
-        <p>Sit back while we create your setup.</p>
-      </div>
-      <div class="card">
-        <h3>4. Launch</h3>
-        <p>Receive everything organised and ready.</p>
+      <div class="pkg-full-body">
+        <div class="pkg-includes">
+          <h4>What's included</h4>
+          <ul class="pkg-list">
+            <li><span class="check">✓</span> Logo (3 Variations)</li>
+            <li><span class="check">✓</span> Simple Brand Kit PDF</li>
+            <li><span class="check">✓</span> Colour Palette</li>
+            <li><span class="check">✓</span> 6 Social Media Templates</li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary" style="margin-top:2rem;">Get This Package</a>
+        </div>
+        <div class="pkg-ideal">
+          <h4>Ideal for</h4>
+          <p>New businesses who need to establish a professional visual identity quickly and affordably. You want to look the part before you even launch.</p>
+          <div class="pkg-tags">
+            <span>New Business</span>
+            <span>Visual Identity</span>
+            <span>Social Ready</span>
+          </div>
+        </div>
       </div>
     </div>
-      
-      <a href="contact.html" class="btn">Start Your Setup</a>
+
+    <div class="pkg-divider"></div>
+
+    <!-- Business Systems -->
+    <div class="pkg-full reveal" id="systems">
+      <div class="pkg-full-header">
+        <div class="pkg-full-num">02</div>
+        <div>
+          <div class="section-eyebrow">Package Two</div>
+          <h2 class="pkg-full-title">Business Systems Starter</h2>
+          <p class="pkg-full-desc">Stop running your business from sticky notes and scattered spreadsheets. Get properly organised.</p>
+        </div>
+      </div>
+      <div class="pkg-full-body">
+        <div class="pkg-includes">
+          <h4>What's included</h4>
+          <ul class="pkg-list">
+            <li><span class="check">✓</span> Notion Dashboard</li>
+            <li><span class="check">✓</span> CRM Sheet</li>
+            <li><span class="check">✓</span> Finance Tracker</li>
+            <li><span class="check">✓</span> Admin Templates</li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary" style="margin-top:2rem;">Get This Package</a>
+        </div>
+        <div class="pkg-ideal">
+          <h4>Ideal for</h4>
+          <p>Businesses that are operational but chaotic — you need structure, visibility and a system that grows with you. Perfect for solopreneurs and small teams.</p>
+          <div class="pkg-tags">
+            <span>Operations</span>
+            <span>Organisation</span>
+            <span>Efficiency</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pkg-divider"></div>
+
+    <!-- Business in a Box -->
+    <div class="pkg-full pkg-full-featured reveal" id="box">
+      <div class="pkg-featured-badge">Most Popular</div>
+      <div class="pkg-full-header">
+        <div class="pkg-full-num">03</div>
+        <div>
+          <div class="section-eyebrow">Package Three</div>
+          <h2 class="pkg-full-title">Business-in-a-Box</h2>
+          <p class="pkg-full-desc">The complete launchpad. Brand, systems, strategy and content — all delivered and handed over. Launch with confidence.</p>
+        </div>
+      </div>
+      <div class="pkg-full-body">
+        <div class="pkg-includes">
+          <h4>What's included</h4>
+          <ul class="pkg-list">
+            <li><span class="check">✓</span> Full Branding Package</li>
+            <li><span class="check">✓</span> Full Systems Setup</li>
+            <li><span class="check">✓</span> Launch Strategy</li>
+            <li><span class="check">✓</span> 30-Day Content Plan</li>
+            <li><span class="check">✓</span> 15 Social Media Templates</li>
+            <li><span class="check">✓</span> 1-Hour Handover Session</li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary" style="margin-top:2rem;">Get This Package</a>
+        </div>
+        <div class="pkg-ideal">
+          <h4>Ideal for</h4>
+          <p>Entrepreneurs and businesses ready to launch properly — or existing businesses who need a full reset. This is the complete package to hit the ground running from day one.</p>
+          <div class="pkg-tags">
+            <span>Complete Solution</span>
+            <span>Launch Ready</span>
+            <span>Brand + Systems</span>
+            <span>Content Strategy</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 
-<footer>© KRP Solutions</footer>
+<!-- CUSTOM -->
+<section class="custom-section">
+  <div class="container">
+    <div class="custom-inner reveal">
+      <div class="custom-icon">✦</div>
+      <h2>Need something custom?</h2>
+      <p>Every business is different. Get in touch and we'll create a tailored package built around your specific needs and budget — no cookie-cutter solutions.</p>
+      <a href="contact.html" class="btn btn-white">Let's Talk Custom</a>
+    </div>
+  </div>
+</section>
 
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo"><span class="logo-krp">KRP</span><span class="logo-sol">Solutions</span></div>
+        <p>Building brands that get seen, remembered and chosen.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#branding">Branding Essentials</a></li>
+          <li><a href="#systems">Business Systems</a></li>
+          <li><a href="#box">Business-in-a-Box</a></li>
+          <li><a href="contact.html">Custom Package</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Get in Touch</h4>
+        <a href="contact.html" class="btn btn-outline btn-sm">Contact Us</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 KRP Solutions. All rights reserved.</p>
+      <p>Creative Marketing Agency</p>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
 </body>
 </html>
