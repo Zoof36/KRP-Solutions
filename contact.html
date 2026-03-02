@@ -100,7 +100,7 @@
           </div>
           <div class="form-group">
             <label for="business">Business Name (optional)</label>
-            <input type="text" id="business" name="business" placeholder="Your Business Name">
+            <input type="text" id="business" name="business name" placeholder="Your Business Name">
           </div>
           <div class="form-group">
             <label for="package">Interested In</label>
@@ -176,7 +176,9 @@
 <script src="main.js"></script>
 <script>
   // EmailJS — replace with your actual credentials
-  emailjs.init("IXJ5g5JeJEtzal1_t");
+  emailjs.init({
+  publicKey: "IXJ5g5JeJEtzal1_t",
+});
 
   document.getElementById('contactForm').addEventListener('submit', async function(e) {
     e.preventDefault();
