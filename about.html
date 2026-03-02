@@ -1,86 +1,187 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>About | KRP Solutions</title>
-  <link rel="stylesheet" href="css/style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — KRP Solutions</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<header>
-  <div class="nav">
-    <strong>KRP Solutions</strong>
-      
-    <div class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-      <a href="contact.html" class="btn">Start Your Setup</a>
-    </div>
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-krp">KRP</span><span class="logo-sol">Solutions</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="contact.html" class="nav-cta">Get in Touch</a></li>
+    </ul>
   </div>
-</header>
+</nav>
 
-<section class="section-soft">
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-bg"></div>
   <div class="container">
-    <h1>Behind KRP Solutions</h1>
-    <p>
-     KRP Solutions is a digital operations and branding agency dedicated to helping small businesses get organised, branded, and ready for growth. We focus on clean visuals and simple systems that make business easier.
-    </p>
-  </div>
-</section>
-    
-<section class="section-light">
-  <div class="container">
-    <h2>Our Approach</h2>
-    <p>
-     We work with small businesses and entrepreneurs who understand that good branding and organised systems are investments, not expenses. Our process is designed to be efficient, collaborative and results-driven.
-    </p>
-    <div class="cards">
-      <div class="card">
-        <h3>1. Discovery</h3>
-        <p>Understanding your business, goals and brand vision.</p>
-      </div>
-      <div class="card">
-        <h3>2. Creation</h3>
-        <p>Designing and building your customised solutions.</p>
-      </div>
-      <div class="card">
-        <h3>3. Delivery</h3>
-        <p>Organised handover with clear documentation.</p>
-      </div>
+    <div class="page-hero-content reveal">
+      <div class="section-eyebrow">About KRP Solutions</div>
+      <h1>We build businesses,<br><em>not just deliverables</em></h1>
+      <p>A creative marketing agency built on the belief that every business deserves to be seen.</p>
     </div>
   </div>
 </section>
-    
 
-<section class="section-light">
+<!-- MISSION -->
+<section class="section">
   <div class="container">
-    <h2>FAQ?</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>How long does the process take?</h3>
-        <p>Most projects are delivered within 3-7 business days, depending on the service package selected.</p>
+    <div class="about-mission reveal">
+      <div class="mission-quote">
+        <div class="mission-mark">"</div>
+        <blockquote>Building brands that get seen, remembered and chosen.</blockquote>
       </div>
-      <div class="card">
-        <h3>What do i need to provide?</h3>
-        <p>Just your business information, brand preferences, and any existing materials. We'll guide you through the rest.</p>
-      </div>
-      <div class="card">
-        <h3>Do you offer revisions?</h3>
-        <p>Yes. all packages include revisions to ensure you're completely satisfied with the final delierables.</p>
-      </div>
-      <div class="card">
-        <h3>What if I need something custom?</h3>
-        <p>Get in touch and we'll create a custom package tailored to your specific needs and budget.</p>
+      <div class="mission-text">
+        <p>KRP Solutions was founded with a clear mission: to close the gap between great businesses and great branding. Too many incredible small businesses go unnoticed — not because they lack talent or value, but because they lack visibility, consistency and systems.</p>
+        <p>We fix that. Through sharp visual identities, structured business systems and strategic thinking, we give your business everything it needs to stand out, scale up and be chosen.</p>
       </div>
     </div>
-      
-      <a href="contact.html" class="btn">Start Your Setup</a>
   </div>
 </section>
 
-<footer>© KRP Solutions</footer>
+<!-- VALUES -->
+<section class="section values-section">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-eyebrow">Our Values</div>
+      <h2 class="section-title">What drives <em>everything we do</em></h2>
+    </div>
+    <div class="values-grid">
+      <div class="value-card reveal">
+        <div class="value-num">01</div>
+        <h3>Intentional Design</h3>
+        <p>Every colour, font and layout choice has a reason. We don't do decoration — we do strategy made visible.</p>
+      </div>
+      <div class="value-card reveal delay-1">
+        <div class="value-num">02</div>
+        <h3>Real Partnership</h3>
+        <p>We listen before we design. Your vision drives ours — we're collaborators, not order-takers.</p>
+      </div>
+      <div class="value-card reveal delay-2">
+        <div class="value-num">03</div>
+        <h3>Substance Over Style</h3>
+        <p>Looking good is the start, not the finish. We build brands that convert, systems that run, and businesses that last.</p>
+      </div>
+      <div class="value-card reveal">
+        <div class="value-num">04</div>
+        <h3>Accessible Excellence</h3>
+        <p>World-class branding and operations shouldn't be reserved for big budgets. We bring it to businesses of every size.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
+<!-- WHAT WE DO WELL -->
+<section class="section expertise-section">
+  <div class="container">
+    <div class="expertise-grid">
+      <div class="expertise-text reveal">
+        <div class="section-eyebrow">Our Expertise</div>
+        <h2 class="section-title">Two disciplines.<br><em>One outcome.</em></h2>
+        <p>Most agencies do one thing. We do two — and they're better together. Branding without systems leads to chaos. Systems without branding leads to invisibility. We deliver both, in sync.</p>
+        <a href="services.html" class="btn btn-primary" style="margin-top:2rem;">See Our Packages</a>
+      </div>
+      <div class="expertise-bars reveal delay-1">
+        <div class="exp-bar-item">
+          <div class="exp-bar-label">
+            <span>Brand Strategy & Identity</span>
+            <span>95%</span>
+          </div>
+          <div class="exp-bar-track"><div class="exp-bar-fill" style="--w:95%"></div></div>
+        </div>
+        <div class="exp-bar-item">
+          <div class="exp-bar-label">
+            <span>Business Systems & Operations</span>
+            <span>90%</span>
+          </div>
+          <div class="exp-bar-track"><div class="exp-bar-fill" style="--w:90%"></div></div>
+        </div>
+        <div class="exp-bar-item">
+          <div class="exp-bar-label">
+            <span>Social Media & Content</span>
+            <span>88%</span>
+          </div>
+          <div class="exp-bar-track"><div class="exp-bar-fill" style="--w:88%"></div></div>
+        </div>
+        <div class="exp-bar-item">
+          <div class="exp-bar-label">
+            <span>Launch Strategy</span>
+            <span>92%</span>
+          </div>
+          <div class="exp-bar-track"><div class="exp-bar-fill" style="--w:92%"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-banner">
+  <div class="cta-bg"><div class="cta-orb"></div></div>
+  <div class="container">
+    <div class="cta-inner reveal">
+      <h2>Ready to be seen, remembered &amp; chosen?</h2>
+      <p>Let's build something you're proud of.</p>
+      <a href="contact.html" class="btn btn-white">Start the Conversation</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo"><span class="logo-krp">KRP</span><span class="logo-sol">Solutions</span></div>
+        <p>Building brands that get seen, remembered and chosen.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#branding">Branding Essentials</a></li>
+          <li><a href="services.html#systems">Business Systems</a></li>
+          <li><a href="services.html#box">Business-in-a-Box</a></li>
+          <li><a href="contact.html">Custom Package</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Get in Touch</h4>
+        <a href="contact.html" class="btn btn-outline btn-sm">Contact Us</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 KRP Solutions. All rights reserved.</p>
+      <p>Creative Marketing Agency</p>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
 </body>
 </html>
