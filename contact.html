@@ -197,7 +197,6 @@
       await emailjs.sendForm('service_nlveumm', 'template_nqp8sd9', this);
       
       // Simulated success for demo:
-      await new Promise(r => setTimeout(r, 1200));
       success.style.display = 'block';
       this.reset();
     } catch (err) {
